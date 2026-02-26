@@ -16,7 +16,11 @@ else:
 #Considera construcciones alternativas: Las construcciones alternativas como las listas de comprensión o las funciones lambda pueden proporcionar 
 #formas más concisas y eficientes de lograr el mismo resultado que los bucles y las sentencias condicionales
 
-#TAREA COACH
+# TIP
+# La distinción clave entre los bucles for y while es que los bucles for iteran sobre una secuencia conocida, mientras que los bucles while iteran 
+# hasta que una condición se convierte en falsa.
+
+# TAREA COACH
 #determinar el precio de las entradas de cine según la edad del cliente. Aquí están las reglas de precios:
 #Niños (menores de 12 años): $8
 #Adultos (12-64 años): $12
@@ -33,3 +37,23 @@ elif(edad < 65):
 else:
     precio = 10    
     print("tarifa para mayores, $",precio,sep="")
+
+
+# elif le permite encadenar varias condiciones, proporcionando respuestas más matizadas basadas en el valor de la temperatura.
+temperature = 15  # Let's assume the temperature is 15 degrees Celsius
+
+if temperature < 10:
+    print("Wear a jacket! It's cold out there.")
+elif 10 <= temperature < 20:
+    print("A light sweater should be fine. It's a bit chilly.")
+elif 20 <= temperature < 30:
+    print("Enjoy the pleasant weather! No need for extra layers.")
+else:
+    print("It's hot! Stay hydrated and wear sunscreen.")
+
+
+
+for i in range (10, -1, -1):
+  print(i)
+  if( i == 5):
+    print("Punto medio alcanzado!")
