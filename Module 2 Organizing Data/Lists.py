@@ -52,15 +52,16 @@ print(grocery_list[0:2]) # desde el 0 hasta el 2 pero sin incluirlo (coge la 0 y
 
 # list.remove(x)                      Elimina la primera x de la lista.
 
-# lista.ordenar()                     Ordena la lista.
+# lista.sort()                        Ordena la lista.
 
 # list.reverse()                      Invierte el orden de los elementos de la lista.
 
-# list.count(x)                       Cuenta cuántas veces aparece x en la lista.
-
-# x en lista                          Comprueba si x está en la lista.
+# list.count(x)                       Retorna cuántas veces aparece x en la lista.
 
 # list.index(x)                       Indica la posición de la primera x en la lista.
+
+# list.pop()                          Elimina y retorna el ultimo elemento de una lista o del indice especificado
+
 
 #Compresión de listas
 # [expression for item in iterable]
