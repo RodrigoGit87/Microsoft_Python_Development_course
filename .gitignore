@@ -35,6 +35,7 @@ env/
 
 # Jupyter Notebooks checkpoints
 .ipynb_checkpoints/
+*.ipynb
 
 # ========================
 # Sistema operativo
@@ -56,3 +57,5 @@ $RECYCLE.BIN/
 *.tmp
 *.bak
 *.swp
+#CSV
+*.csv
