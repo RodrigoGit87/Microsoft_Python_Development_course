@@ -9,7 +9,7 @@ Estado: En progreso
 
 Plataforma: Microsoft Learn / Coursera
 
-Tecnologías principales: Python, Jupiter Notebook
+Tecnologías principales: Python, Jupyter Notebook
 
 -- Estructura del Proyecto -- 📂 
 La organización de las carpetas sigue la estructura del currículo oficial:
@@ -18,7 +18,7 @@ La organización de las carpetas sigue la estructura del currículo oficial:
 
 -- Herramientas Utilizadas -- 🛠️
 Para el desarrollo de este curso se han empleado las siguientes herramientas:
-IDE: Visual Studio Code / Google Antigravity
+IDE: Google Antigravity
 
 Control de Versiones: Git & GitHub
 
