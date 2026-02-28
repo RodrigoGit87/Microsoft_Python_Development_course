@@ -1,4 +1,5 @@
 #SINTAXSIS DE UNA FUNCION
+#La nomenclatura para nombrar funciones es con 'snake_case' y dar un nombre que indique bien lo que hace. Se suele empezar con un verbo y evitar generalizaciones.
 def function_name(parameters):
     """ String explicando que hace la funcion """
     #Codigo en sí
@@ -30,7 +31,6 @@ antarctic_temperatures = [-25.5, -28.0, -26.3, -23.8, -27.1, -24.9, -29.2]
 # Aplique la función min() a la lista antarctic_temperatures para determinar la temperatura más baja registrada.
 highest_temp = max(antarctic_temperatures)
 lowest_temp = min(antarctic_temperatures)
-
 print("Highest temperature:", highest_temp, "°C")
 print("Lowest temperature:", lowest_temp, "°C")
 
@@ -43,3 +43,21 @@ print("Average temperature:", average_temp, "°C")
 # Calcule el valor absoluto de la temperatura más fría utilizando la función abs().
 coldest_temp_abs = abs(lowest_temp)
 print("The coldest temperature was", coldest_temp_abs, "°C below freezing.")
+
+# --- CONSIDERACIONES AVANZADAS --
+#Si una función está destinada a un uso interno dentro de un módulo y no debe accederse a ella directamente desde el exterior, anteponga a su nombre un guión bajo (_). 
+# Por ejemplo, _calculate_internal_metrics. En el caso de las funciones que devuelven un valor booleano (Verdadero/Falso), se recomienda utilizar prefijos como is_, has_ o can_ para indicar su naturaleza
+
+# PRACTICA
+def calculate_diameter_circle(radius: float) -> float:
+    """Calculate the diameter of a circle
+        Args
+            the radius of the circle in float type
+        Returns
+            the diameter based on the radius given
+        Raises
+            Math error if negative radius"""
+    diameter= float(radius * 2)
+    if float(radius) < 0:
+        diameter=-1 
+    return diameter
