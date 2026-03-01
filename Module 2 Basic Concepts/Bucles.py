@@ -31,6 +31,22 @@ while not valid_input:
   else:
     print("Invalid input. Please try again.")
 
+#SENTENCIAS BREAK Y CONTINUE
+#Se usa break para interrumpir y salir del bucle
+text = "OpenEDG Python Institute"
+for letter in text:
+    if letter == "P":
+        break
+    print(letter, end="")
+
+#Se utiliza continue para omitir la iteración actual, y continuar con la siguiente iteración
+text = "six seven"
+for letter in text:
+    if letter == "x":
+        continue
+    print(letter, end="")
+
+
 #TAREA
 #Creará un juego de adivinar números en el que el ordenador intentará adivinar un número secreto que usted le indique.
 #El ordenador generará conjeturas aleatorias dentro de un rango (1 a 10) y continuará adivinando hasta que encuentre el número correcto
