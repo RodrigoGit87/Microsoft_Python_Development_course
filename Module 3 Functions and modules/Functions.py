@@ -61,3 +61,31 @@ def calculate_diameter_circle(radius: float) -> float:
     if float(radius) < 0:
         diameter=-1 
     return diameter
+
+# ---- TECNICAS AVANZADAS -----
+# Puede utilizar *args para recopilar argumentos posicionales en una tupla y **kwargs para recopilar argumentos de palabras clave en un diccionario
+#Ejemplo:
+def flexible_function(*args, **kwargs):
+    print("Positional arguments:", args)
+    print("Keyword arguments:", kwargs)
+
+flexible_function(1, 2, 3, name="Alice", age=30)
+
+# Parametros obligatorios y opcionales:
+def create_user_profile(name, age, occupation="Student", interests=None):
+    #name y age son parámetros obligatorios porque un perfil de usuario no estaría completo sin ellos.
+    #occupation y interests son opcionales. occupation es por defecto "Estudiante", garantiza que la función pueda crear un perfil básico aunque no se proporcionen.
+    #interests es por defecto None, lo que permite a los usuarios omitir esta información si así lo desean.
+    if interests is None:  # Initialize if None
+        interests = [] 
+
+    profile = {
+        "name": name,
+        "age": age,
+        "occupation": occupation,
+        "interests": interests
+    }
+    return profile
+
+user = create_user_profile("Bob", 18)  # Se puede hacer la llamada a la funcion aunque no se hallan especificado los parametros opcionales.
+print(user)
