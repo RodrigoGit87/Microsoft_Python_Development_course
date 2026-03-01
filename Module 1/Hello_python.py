@@ -1,12 +1,12 @@
 print("Hello, world!")
 
-#Variables
+#VARIABLES
 num1 = 10
 num2 = 5
 string = "string" 
 boolean = True
 
-#Basic operations
+#OPERADORES MATEMATICOS
 
     #Addition +
 addition = num1 + num2
@@ -42,3 +42,24 @@ discount = (discount_rate / 100) * original_price
 final_price = original_price - discount
 
 print("The final price after discount is: $", final_price)
+
+#OPERADORES DE COMPARACION
+#-De Asignación =
+var = 'a'
+#-De Comparación == True si son iguales, False si son distintos
+print(var == 'a') #True
+print(var == 'b',"\n") #False
+#-Menor que < (estricto), menor o igual que <=
+#-Mayor que > (estricto), mayor o igual que >= 
+#Desigualdad != (no es igual a) False si son iguales, True si son distintos
+print(var != 'a') #False
+print(var != 'b') #True
+
+#TABLA DE PRIORIDAD DE EJECUCION
+#Prioridad             Operador
+# 1                     +, -        unario
+# 2                     **
+# 3                     *,/,//,%
+# 4                     +, -        binario
+# 5                     <,<=,>,>=
+# 6                     ==, !=
