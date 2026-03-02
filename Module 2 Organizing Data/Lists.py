@@ -1,10 +1,14 @@
 #Las LISTAS son estructuras de datos fundamentales en Python, que sirven como contenedores versátiles para almacenar 
 #colecciones de elementos.A diferencia de las matrices de otros lenguajes de programación, que pueden restringir el tipo de elementos, 
 # las listas de Python ofrecen la flexibilidad de contener diversos tipos de datos, incluyendo números, cadenas, 
-# booleanos e incluso otras listas. Esta naturaleza dinámica hace de las listas una herramienta indispensable para diversas 
-# tareas de programación, desde la simple organización de datos hasta la compleja implementación de algoritmos.
+# booleanos e incluso otras listas. 
 
-#Declaracion
+#CARACTERISTICAS PRINCIPALES
+# Indexacion: Los elementos tienen indice my_list[0]
+# Mutabilidad: . No está limitado a los contenidos iniciales de una lista. Se puede añadir,extender, quitar... 
+
+
+# -- DECLARACION --
 # Lista vacía: Su programa necesita tener una lista que se cargará durante la ejecución del programa. Puede obtener valores del usuario 
 # o de un archivo y almacenarlos durante la ejecución del programa. La lista debe ser inicializada primero.
 new_list = []
@@ -20,7 +24,7 @@ coin_flip = [True, False, True, True, False]
     # Ten en cuenta que verás otras formas más eficientes de hacer esto en lecturas posteriores, cuando te encuentres con diccionarios.
 student_record = ["Rodrigo", 38, "Multiplatform Development Application", 8.8, True]
 
-#Impresión
+# -- IMPRESIÓN --
 grocery_list = ["milk", "hummus", "bread", "cheese", "apples"]
 print(grocery_list)
     
@@ -36,12 +40,12 @@ print(grocery_list[len(grocery_list) - 1])
 last_index = len(grocery_list) -1 
 print(grocery_list[last_index])   
 
-#Rebanar: Acceso a una parte de la lista
+# REBANAR: Acceso a una parte de la lista
 # A veces, sólo necesita una parte de la lista. 
 # Python te permite extraer una "porción" de tu lista, como ésta:
 print(grocery_list[0:2]) # desde el 0 hasta el 2 pero sin incluirlo (coge la 0 y la 1)
 
-#Metodos mas comunes para trabajar listas
+# METODOS MAS COMUNES 
 # Comando                             Qué hace
 
 # len(lista)                          Te dice cuántas cosas hay en la lista.
@@ -63,7 +67,7 @@ print(grocery_list[0:2]) # desde el 0 hasta el 2 pero sin incluirlo (coge la 0 y
 # list.pop()                          Elimina y retorna el ultimo elemento de una lista o del indice especificado
 
 
-#Compresión de listas
+# -- COMPRESIÓN DE LISTAS --
 # [expression for item in iterable]
 
 # [ ... ]: Los corchetes significan que el resultado será una nueva lista.
@@ -74,15 +78,15 @@ print(grocery_list[0:2]) # desde el 0 hasta el 2 pero sin incluirlo (coge la 0 y
 # for item in iterable: Esta parte especifica el iterable con el que se está trabajando y asigna cada elemento del iterable 
 # a la variable item durante cada iteración. Es similar al comienzo de un bucle for.  
 #Ejemplo:
-
 exam_scores = [55, 70, 78, 52, 68]
 curve_amount = 10
+
 # Use a list comprehension to create a new list of curved grades
 curved_grades = [score + curve_amount for score in exam_scores]
 print("Original scores:", exam_scores)
 print("Curved scores:", curved_grades)
 
-#Listas bidimensionales: Listas dentro de listas
+#LISTAS BIDIMENSIONALES: Listas dentro de listas
 grid = [ 
       [1, 2, 3],
 
