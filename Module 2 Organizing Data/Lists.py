@@ -7,7 +7,6 @@
 # Indexacion: Los elementos tienen indice my_list[0]
 # Mutabilidad: . No está limitado a los contenidos iniciales de una lista. Se puede añadir,extender, quitar... 
 
-
 # -- DECLARACION --
 # Lista vacía: Su programa necesita tener una lista que se cargará durante la ejecución del programa. Puede obtener valores del usuario 
 # o de un archivo y almacenarlos durante la ejecución del programa. La lista debe ser inicializada primero.
@@ -18,10 +17,16 @@ enteros = [1,2,3,4,5,6,7,8,9,10]
 chars = ["a","b","c","d","e"]
     #booleans
 coin_flip = [True, False, True, True, False]
-    # Valores mixtos: Su programa necesita almacenar la información de los estudiantes en una lista. Quieres almacenar el nombre 
-    # de un estudiante (una cadena), su edad (un número), su especialidad (una cadena), su GPA (un número en coma flotante), 
-    # y si es un estudiante a tiempo completo (un valor booleano). 
-    # Ten en cuenta que verás otras formas más eficientes de hacer esto en lecturas posteriores, cuando te encuentres con diccionarios.
+    #Eliminar elemento:
+del chars[4] #Elimina el 5º elemento (indice 4)
+print(chars)   
+    #Indice negativo - se permite acceder con indice negativos. un indice [-1] apunta al último de la lista, un [-2] penúltimo...
+print(enteros[-3]) #8 
+  
+# Valores mixtos: Su programa necesita almacenar la información de los estudiantes en una lista. Quieres almacenar el nombre 
+# de un estudiante (una cadena), su edad (un número), su especialidad (una cadena), su GPA (un número en coma flotante), 
+# Ten en cuenta que verás otras formas más eficientes de hacer esto en lecturas posteriores, cuando te encuentres con diccionarios.
+# y si es un estudiante a tiempo completo (un valor booleano). 
 student_record = ["Rodrigo", 38, "Multiplatform Development Application", 8.8, True]
 
 # -- IMPRESIÓN --
