@@ -7,6 +7,17 @@
 # Indexacion: Los elementos tienen indice my_list[0]
 # Mutabilidad: . No está limitado a los contenidos iniciales de una lista. Se puede añadir,extender, quitar... 
 
+#.Si tienes una lista list_1, y la siguiente asignación: list_2 = list_1 esto no hace una copia de la lista list_1, 
+# pero hace que las variables list_1 y list_2 apunten a la misma lista en la memoria
+vehicles_one = ['coche', 'bicicleta', 'motor']
+print(vehicles_one) # output: ['coche', 'bicicleta', 'motor']
+ 
+vehicles_two = vehicles_one
+del vehicles_one[0] # elimina 'coche'
+print(vehicles_two) # output: ['bicicleta', 'motor']
+ 
+
+
 # -- DECLARACION --
 # Lista vacía: Su programa necesita tener una lista que se cargará durante la ejecución del programa. Puede obtener valores del usuario 
 # o de un archivo y almacenarlos durante la ejecución del programa. La lista debe ser inicializada primero.
@@ -44,6 +55,10 @@ print(grocery_list[len(grocery_list) - 1])
     #o guardar en una variable el retorno del len() y usarla en el print (Más legible)
 last_index = len(grocery_list) -1 
 print(grocery_list[last_index])   
+    
+    #con operador in / not in (Devuelve True/False)
+print("milk" in grocery_list)   #true 
+print("milk" not in grocery_list)   #false (por que si se encuentra en la lista)
 
 # REBANAR: Acceso a una parte de la lista
 # A veces, sólo necesita una parte de la lista. 
