@@ -6,17 +6,24 @@ import random
 # o cuando se conoce de antemano el número de iteraciones.
 for i in range(0,10):
     print("iteration:",i)
+
 # ITERACIONES POSIBLES EN FOR
 # range(stop): Genera una secuencia de números empezando por 0 (por defecto) hasta, pero sin incluir, el valor stop, incrementándose en 1 cada vez.
 # Así, range(5) haría un bucle del 0 al 4. -- No hay homologo en Java --
+for i in range(5):
+    print(i)
 
 # range(start, stop): Esta forma le permite especificar el valor inicial de la secuencia. Genera números desde el valor inicial hasta el valor final,
 # pero sin incluirlo, aumentando en 1 cada vez. Así, range (1, 11) haría un bucle del 1 al 10. -- No hay homologo en Java --
+for i in range(0,9):
+    print(2**i)
 
 # range(start, stop, step): Esta es la forma más flexible, ya que permite definir el incremento (o decremento) entre los números de la secuencia. 
 # Genera números empezando por el inicio, continuando hasta (pero sin incluir) el final, con cada número incrementado (o decrementado si el paso es negativo) por paso.
 # Así, range(1, 10, 2) genera 1, 3, 5, 7 y 9. Una versión que utiliza pasos negativos es range(10, 5, -1), que generaría 10, 9, 8, 7 y 6.
 # En Java: for (int i=1; i < 10; i++){...}
+for i in range(0,100,5):
+    print(i)
 
 #------ WHILE --------
 #Un bucle while, por el contrario, ejecuta un bloque de código mientras se cumpla una condición especificada.
