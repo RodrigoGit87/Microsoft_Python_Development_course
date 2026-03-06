@@ -46,7 +46,8 @@ print("The coldest temperature was", coldest_temp_abs, "°C below freezing.")
 
 # --- CONSIDERACIONES AVANZADAS --
 #Si una función está destinada a un uso interno dentro de un módulo y no debe accederse a ella directamente desde el exterior, anteponga a su nombre un guión bajo (_). 
-# Por ejemplo, _calculate_internal_metrics. En el caso de las funciones que devuelven un valor booleano (Verdadero/Falso), se recomienda utilizar prefijos como is_, has_ o can_ para indicar su naturaleza
+# Por ejemplo, _calculate_internal_metrics. 
+# En el caso de las funciones que devuelven un valor booleano (Verdadero/Falso), se recomienda utilizar prefijos como is_, has_ o can_ para indicar su naturaleza
 
 # PRACTICA
 def calculate_diameter_circle(radius: float) -> float:
@@ -89,3 +90,12 @@ def create_user_profile(name, age, occupation="Student", interests=None):
 
 user = create_user_profile("Bob", 18)  # Se puede hacer la llamada a la funcion aunque no se hallan especificado los parametros opcionales.
 print(user)
+
+#Función cuyos parametros son pedidos al usuario
+def address(street, city, postal_code):
+    print("Tu dirección es:", street,"St.,", city, postal_code)
+ 
+s = input("Calle: ")
+p_c = input("Código Postal: ")
+c = input("Ciudad: ")
+address(s, c, p_c)
