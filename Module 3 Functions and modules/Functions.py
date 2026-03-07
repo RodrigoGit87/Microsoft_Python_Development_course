@@ -98,4 +98,35 @@ def address(street, city, postal_code):
 s = input("Calle: ")
 p_c = input("Código Postal: ")
 c = input("Ciudad: ")
-address(s, c, p_c)
+address(s, c, p_c) 
+
+# --- ERROR HANDLING WITH TRY-EXCEPT ---
+def get_city_population(populations, city):
+    """Return the population of a city from a dictionary.
+    Args:
+        populations: A dictionary mapping city names to their populations.
+        city: A string with the name of the city to look up.
+    
+    Returns:
+        The population of the specified city.
+    
+    Raises:
+        KeyError: If the city is not found in the dictionary.
+    """
+    try:
+        return populations[city]
+    except KeyError:
+        raise KeyError(f"City '{city}' not found in the populations dictionary.")
+
+
+# Ejemplo de uso
+city_populations = {
+    "Madrid": 3223000,
+    "Barcelona": 1620000,
+    "Valencia": 791413,
+    "Sevilla": 688711
+}
+
+print(get_city_population(city_populations, "Madrid"))       # 3223000
+print(get_city_population(city_populations, "Barcelona"))    # 1620000
+# print(get_city_population(city_populations, "Bilbao"))     # KeyError: "City 'Bilbao' not found..."
