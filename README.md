@@ -14,8 +14,8 @@ Tecnologías principales: Python, Jupyter Notebook
 #### **Estructura del Proyecto** 📂 
 La organización de las carpetas sigue la estructura del currículo oficial:
 
-/Module 'X'
- |_ file.py
+/Module 'X'  
+ |_ file.py  
  |_ file.ipynb
 
 #### **Herramientas Utilizadas** 🛠️ 
