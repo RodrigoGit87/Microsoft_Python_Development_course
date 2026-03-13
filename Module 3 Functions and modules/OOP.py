@@ -78,12 +78,25 @@ print(f"Instancias de coche creadas: {Car.get_total_cars}")
 # su propio saldo e historial de transacciones. La lógica subyacente para depositar y retirar dinero está encapsulada dentro de la clase,
 #  por lo que no tienes que repetirla para cada cuenta
 
+
+
+
 #-Encapsulación:
 #La encapsulación en Python se logra principalmente a través de una convención entre desarrolladores.
 #Gira en torno al uso de un único guión bajo (_) prefijo para los nombres de atributos para señalar que están destinados para uso interno 
 #dentro de la clase.
 #Python no impide el acceso directo de los atributos de la clase desde fuera de la clase, de ahí esta convención para trata los atributos
 #como privados. (Aqui es la diferencia principal con Java, donde si se puede definir el acceso como private,protected...)
+
+# - Niveles de Acceso de los metodos (por convencción):
+# Public:
+self.balance = 100
+
+#Protected (por convencion de la comunidad, python no bloquea el acceso aunque no lo recomienda)
+self._balance = 100
+
+#Private (Previene el acceso directo externo)
+self.__balance = 100
 
 #Ejemplo:
 class BankAccount:
